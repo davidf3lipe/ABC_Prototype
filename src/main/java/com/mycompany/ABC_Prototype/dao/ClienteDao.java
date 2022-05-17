@@ -104,7 +104,7 @@ public class ClienteDao {
 
         try {
             Connection conexion = conectar();
-   
+            String dao = "";
             String SQL = "UPDATE `resoluciones` SET `nombre` = '"+client.getNombre()
                     +"', `apellido` = '"+client.getApellido()
                     +"', `telefono` = '"+client.getTelefono()
